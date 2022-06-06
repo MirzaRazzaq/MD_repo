@@ -9,6 +9,7 @@ import android.view.View
 import com.bangkit.getguide.HomeActivity
 import com.bangkit.getguide.R
 import com.bangkit.getguide.databinding.ActivityLoginBinding
+import com.bangkit.getguide.preference.Preference1Activity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -34,7 +35,8 @@ class LoginActivity : AppCompatActivity() {
     private fun Login(){
         // do something
 
-        val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+//        val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+        val intent = Intent(this@LoginActivity, Preference1Activity::class.java)
         startActivity(intent)
         finish()
     }
