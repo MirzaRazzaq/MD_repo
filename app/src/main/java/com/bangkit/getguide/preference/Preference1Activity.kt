@@ -15,7 +15,27 @@ class Preference1Activity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        binding.button1.setOnClickListener {
+        binding.btnVacAlone.setOnClickListener {
+            // do something
+
+            toPref2()
+        }
+
+        binding.btnVacWcouple.setOnClickListener {
+            // do something
+
+            toPref2()
+        }
+
+        binding.btnVacWfamily.setOnClickListener {
+            // do something
+
+            toPref2()
+        }
+
+        binding.btnVacWfriend.setOnClickListener {
+            // do something
+
             toPref2()
         }
     }
