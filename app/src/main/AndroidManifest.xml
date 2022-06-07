@@ -19,6 +19,9 @@
             android:name=".preference.Preference1Activity"
             android:exported="true" />
         <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
             android:name=".authentication.RegisterActivity"
             android:exported="true" />
         <activity

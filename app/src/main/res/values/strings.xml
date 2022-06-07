@@ -17,4 +17,7 @@
     <string name="historical_and_religious_sites">Historical and Religious Sites</string>
     <string name="museum">Museum</string>
     <string name="city_tour">City Tour</string>
+    <string name="search">search</string>
+    <string name="menu">menu</string>
+    <string name="search_hint">Enter Destination</string>
 </resources>
