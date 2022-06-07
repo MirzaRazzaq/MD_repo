@@ -72,7 +72,6 @@ class HomeActivity : AppCompatActivity() {
                 showToast(resources.getString(R.string.menu))
                 Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this, ListActivity::class.java))
-                    finish()
                 }, 2000)
                 return super.onOptionsItemSelected(item)
             }
