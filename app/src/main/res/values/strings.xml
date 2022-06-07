@@ -3,6 +3,20 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="pref1_title">PLEASE FILL IN THE FOLLOWING QUESTIONS TO FIND THE TRAVEL EXPERIENCE YOU WANT</string>
+    <string name="pref1_qtitle">Question 1</string>
+    <string name="pref1_qdesc">Who are you on vacation with?</string>
+    <string name="vac_alone">Vacation Alone</string>
+    <string name="vac_wcouple">Vacation With Couple</string>
+    <string name="vac_wfamily">Vacation With Family</string>
+    <string name="vac_wfriend">Vacation With Friend</string>
+    <string name="pref2_qtitle">Question 2</string>
+    <string name="pref2_qdesc">Where is your destination on vacation?</string>
+    <string name="water_recreation">Water Recreation</string>
+    <string name="mountains_and_countryside">Mountains and Countryside</string>
+    <string name="historical_and_religious_sites">Historical and Religious Sites</string>
+    <string name="museum">Museum</string>
+    <string name="city_tour">City Tour</string>
     <string name="search">search</string>
     <string name="menu">menu</string>
     <string name="search_hint">Enter Destination</string>

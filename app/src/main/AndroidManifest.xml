@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GetGuide">
         <activity
+            android:name=".preference.Preference3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".preference.Preference2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".preference.Preference1Activity"
+            android:exported="true" />
+        <activity
             android:name=".ListActivity"
             android:exported="false" />
         <activity
