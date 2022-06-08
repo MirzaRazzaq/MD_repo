@@ -20,4 +20,9 @@
     <string name="search">search</string>
     <string name="menu">menu</string>
     <string name="search_hint">Enter Destination</string>
+    <string name="find_the_right_place_for_a_vacation">FIND THE RIGHT PLACE FOR A VACATION</string>
+    <string name="next">Next</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="find_tourist_spots_for_family">FIND TOURIST SPOTS FOR FAMILY</string>
+    <string name="let_s_discover_enjoy_amp_share_experiences"><![CDATA[LET\'S DISCOVER, ENJOY & SHARE EXPERIENCES]]></string>
 </resources>
