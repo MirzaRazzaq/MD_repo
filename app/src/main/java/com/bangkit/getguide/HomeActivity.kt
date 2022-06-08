@@ -68,11 +68,14 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.menu1 -> {
+                val intent = Intent(this@HomeActivity, DetailActivity::class.java)
+                startActivity(intent)
+            }
             R.id.menu2 -> {
                 showToast(resources.getString(R.string.menu))
                 Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this, ListActivity::class.java))
-                    finish()
                 }, 2000)
                 return super.onOptionsItemSelected(item)
             }

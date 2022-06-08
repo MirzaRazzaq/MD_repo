@@ -10,17 +10,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class ListWisataAdapter (private val listWisata: ArrayList<ListWisata>) : RecyclerView.Adapter<ListWisataAdapter.CardViewViewHolder>() {
-    inner class CardViewViewHolder (itemView: View): RecyclerView.ViewHolder(itemView) {
-        var  imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
-        var  tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        var  tvAlamat: TextView = itemView.findViewById(R.id.tv_item_alamat)
-        var  tvRating1: TextView = itemView.findViewById(R.id.tv_item_rating1)
-        var  imgRating2: ImageView = itemView.findViewById(R.id.iv_item_rating2)
+class ListWisataAdapter(private val listWisata: ArrayList<ListWisata>) :
+    RecyclerView.Adapter<ListWisataAdapter.CardViewViewHolder>() {
+    inner class CardViewViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
+        var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
+        var tvAlamat: TextView = itemView.findViewById(R.id.tv_item_alamat)
+        var tvRating1: TextView = itemView.findViewById(R.id.tv_item_rating1)
+        var imgRating2: ImageView = itemView.findViewById(R.id.iv_item_rating2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_card_list,parent,false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_card_list, parent, false)
         return CardViewViewHolder(view)
     }
 
@@ -37,7 +39,11 @@ class ListWisataAdapter (private val listWisata: ArrayList<ListWisata>) : Recycl
         holder.tvRating1.text = wisata.rating1
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(holder.itemView.context,"Kamu Memilih " + listWisata[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                holder.itemView.context,
+                "Kamu Memilih " + listWisata[holder.adapterPosition].name,
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
     }
