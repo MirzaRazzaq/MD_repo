@@ -18,7 +18,9 @@
         <entry key="..\:/GitHub/GetGuide-App/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/GetGuide-App/app/src/main/res/layout/fragment_third_screen.xml" value="0.24010416666666667" />
         <entry key="..\:/GitHub/GetGuide-App/app/src/main/res/layout/fragment_view_pager.xml" value="0.24010416666666667" />
+        <entry key="..\:/GitHub/MD_repo/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.2703125" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/drawable/round_corner.xml" value="0.2703125" />
+        <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/activity_detail.xml" value="0.264" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/activity_list.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
@@ -28,6 +30,7 @@
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/MD_repo/app/src/main/res/layout/item_card_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/GitHub/MD_repo/app/src/main/res/menu/option_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
