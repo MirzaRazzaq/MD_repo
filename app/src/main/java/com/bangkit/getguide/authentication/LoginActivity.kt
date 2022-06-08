@@ -1,48 +1,71 @@
 package com.bangkit.getguide.authentication
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
+import android.util.Patterns
+import android.widget.Toast
 import com.bangkit.getguide.HomeActivity
-import com.bangkit.getguide.R
 import com.bangkit.getguide.databinding.ActivityLoginBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+    lateinit var binding : ActivityLoginBinding
+    lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
 
-        supportActionBar?.hide()
+        auth = FirebaseAuth.getInstance()
+
+
+        binding.tvToRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.btnLogin.setOnClickListener {
-            Login()
-        }
+            val email = binding.edtEmailLogin.text.toString()
+            val password = binding.edtPasswordLogin.text.toString()
 
-        binding.btnRegister.setOnClickListener {
-            Register()
+            //Validasi email
+            if (email.isEmpty()){
+                binding.edtEmailLogin.error = "Email Harus Diisi"
+                binding.edtEmailLogin.requestFocus()
+                return@setOnClickListener
+            }
+
+            //Validasi email tidak sesuai
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                binding.edtEmailLogin.error = "Email Tidak Valid"
+                binding.edtEmailLogin.requestFocus()
+                return@setOnClickListener
+            }
+
+            //Validasi password
+            if (password.isEmpty()){
+                binding.edtPasswordLogin.error = "Password Harus Diisi"
+                binding.edtPasswordLogin.requestFocus()
+                return@setOnClickListener
+            }
+
+            LoginFirebase(email,password)
         }
     }
 
-    private fun Login(){
-        // do something
-
-        val intent = Intent(this@LoginActivity, HomeActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun Register(){
-        // do something
-
-        val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-        startActivity(intent)
+    private fun LoginFirebase(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) {
+                if (it.isSuccessful) {
+                    Toast.makeText(this, "Selamat datang $email", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }
