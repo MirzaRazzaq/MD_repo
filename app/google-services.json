@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491522417228",
+    "project_id": "c22-ps120-demov0",
+    "storage_bucket": "c22-ps120-demov0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491522417228:android:521b77c536e6ba9c16cae9",
+        "android_client_info": {
+          "package_name": "com.bangkit.getguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491522417228-sinbuh8b8b12gqne5kcm3jpo063h9uuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5cj7m56qdoAHGjDUv30NCm5BRHUY7urk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491522417228-sinbuh8b8b12gqne5kcm3jpo063h9uuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
